@@ -26,7 +26,6 @@ export default class GamePlay {
 
   addPosition() {
     this.cells[this.position].classList.add('goblin');
-    console.log(this.cells);
   }
 
   start() {

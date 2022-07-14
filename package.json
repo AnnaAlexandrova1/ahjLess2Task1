@@ -8,6 +8,8 @@
         "build": "webpack --config webpack.prod.js",
         "lint": "eslint .",
         "doc": "jsdoc -c jsdoc.conf.json",
+        "test": "jest",
+        "coverage": "jest --coverage",
         "preshow:coverage": "npm run coverage",
         "show:coverage": "live-server coverage/lcov-report",
         "preshow:doc": "npm run doc",
