@@ -1,6 +1,8 @@
-import play from '../app';
+/* import startPlay from '../app';
 
-test('testPlay', () => {
-  const received = 'test';
-  expect(play()).toBe(received);
+test('Проверка ячеек поля', () => {
+  const playGame = new startPlay();
+  playGame.start();
+  expect(playGame.innerList.length).toBe(15);
 });
+*/
