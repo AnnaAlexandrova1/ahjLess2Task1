@@ -1,7 +1,6 @@
 export default class GamePlay {
-  constructor(board, goblin, size) {
+  constructor(board, size) {
     this.board = board;
-    this.goblin = goblin;
     this.size = size;
     this.position = undefined;
     this.activePosition = null;
@@ -20,19 +19,18 @@ export default class GamePlay {
   }
 
   removePosition() {
-    if (this.position === undefined) {
-      return;
+    if (this.position !== undefined) {
+      this.cells[this.position].classList.remove('goblin');
     }
-    this.cells[this.position].firstChild.remove();
   }
 
   addPosition() {
-    this.activePosition = this.goblin.getGoblin();
     this.cells[this.position].classList.add('goblin');
     console.log(this.cells);
   }
 
   start() {
-    setInterval((this.createPosition()), 1000);
+    this.createPosition();
+    setInterval(() => { this.createPosition(); }, 1000);
   }
 }

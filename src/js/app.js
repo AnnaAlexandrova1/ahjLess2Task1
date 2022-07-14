@@ -1,11 +1,11 @@
 import Board from './Board';
 import GamePlay from './GamePlay';
-import Goblin from './Goblin';
+// import Goblin from './Goblin';
 
 const board = new Board();
 board.drowBoard(4);
-const goblin = new Goblin();
-const gamePlay = new GamePlay(board, goblin, 4);
+// const goblin = new Goblin();
+const gamePlay = new GamePlay(board, 4);
 gamePlay.start();
 
 /* import imgLink from '../img/goblin.png';

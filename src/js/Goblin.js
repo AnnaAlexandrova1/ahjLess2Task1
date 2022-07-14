@@ -1,4 +1,4 @@
-export default class Goblin {
+/* export default class Goblin {
   constructor() {
     this.goblinChar = undefined;
   }
@@ -13,4 +13,4 @@ export default class Goblin {
     this.drowGoblin();
     return this.goblinChar;
   }
-}
+} */
